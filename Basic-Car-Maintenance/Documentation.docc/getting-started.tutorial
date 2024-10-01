@@ -89,26 +89,6 @@
         }
     }
     
-    @Section(title: "Starting on an issue") {
-        @ContentAndMedia {
-            **BEFORE** starting on an issue, comment on the issue you want to work on.
-
-            This prevents two people from working on the same issue. [Mikaela](https://github.com/mikaelacaron) (the maintainer) will assign you that issue, and you can get started on it.
-
-            @Image(source: 7-issue.png, alt: "GitHub issue")
-        }
-        
-        @Steps {
-            @Step {
-                Checkout a new branch (from the `dev` branch) to work on an issue. 
-                
-                The `feature-name` part of the branch can be shortened or omitted and you add your username instead. No commits should be made to the `main` branch directly. The `main` branch shall only consist of the deployed code. Developers are expected to work on feature branches, and upon successful development and testing, a PR (pull request) must be opened to merge with `dev`. `git checkout -b issueNumber-feature-name`
-                
-                @Image(source: 8-checkout.png, alt: "Checkout issue locally")
-            }
-        }
-    }
-
     @Section(title: "Setting Up Firebase Local Emulator") {
         @ContentAndMedia {
             Follow these steps to set up the Firebase Local Emulator to run the project without affecting production.
@@ -148,6 +128,26 @@
                 Run the app in your simulator or emulator.
                 Ensure that you can see your anonymous user in the Authentication section.
                 @Image(source: 10-run-emulator.png, alt: "Running the app with Emulator")
+            }
+        }
+    }
+
+    @Section(title: "Starting on an issue") {
+        @ContentAndMedia {
+            **BEFORE** starting on an issue, comment on the issue you want to work on.
+
+            This prevents two people from working on the same issue. [Mikaela](https://github.com/mikaelacaron) (the maintainer) will assign you that issue, and you can get started on it.
+
+            @Image(source: 7-issue.png, alt: "GitHub issue")
+        }
+        
+        @Steps {
+            @Step {
+                Checkout a new branch (from the `dev` branch) to work on an issue. 
+                
+                The `feature-name` part of the branch can be shortened or omitted and you add your username instead. No commits should be made to the `main` branch directly. The `main` branch shall only consist of the deployed code. Developers are expected to work on feature branches, and upon successful development and testing, a PR (pull request) must be opened to merge with `dev`. `git checkout -b issueNumber-feature-name`
+                
+                @Image(source: 8-checkout.png, alt: "Checkout issue locally")
             }
         }
     }
